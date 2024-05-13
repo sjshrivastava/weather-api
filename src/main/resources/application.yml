@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: weather-api
+
+server:
+  port: 7776
+
+weather:
+  station:
+    url: https://api.weather.gov/stations
+    timeout: 30000
+ratelimit:
+  capacity: 5
+  refill-rate: 5
+
+
+
+#  https://api.weather.gov/points/{latitude},{longitude}
+#  For example: https://api.weather.gov/points/39.7456,-97.0892
